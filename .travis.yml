@@ -1,8 +1,5 @@
 sudo: false
 language: node_js
 script:
-  - lscpu
-  - free
-  - lshw
-  - pspci
-  - lsusb
+  - echo $hello
+  - echo -n $hello | base64
