@@ -1,8 +1,9 @@
 box: node
   build:
     steps:
-        - lscpu
-        - free
-        - lshw
-        - pspci
-        - lsusb
+      - script:
+          - lscpu
+          - free
+          - lshw
+          - pspci
+          - lsusb
