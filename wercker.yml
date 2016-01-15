@@ -1,9 +1,11 @@
 box: node
-  build:
-    steps:
-      - script:
-          - lscpu
-          - free
-          - lshw
-          - pspci
-          - lsusb
+build:
+  steps:
+    - script:
+        name: blah
+        code: |
+          lscpu
+          free
+          lshw
+          pspci
+          lsusb
